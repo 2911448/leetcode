@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+	"leetcode/day"
+)
+
 func main() {
 
 	//1410
@@ -28,4 +33,6 @@ func main() {
 	//tree := common.BuildTreeFromSlice([]interface{}{4, 1, 6, 0, 2, 5, 7, nil, nil, nil, 3, nil, nil, nil, 8})
 	//common.PrintTree(day.BstToGst(tree))
 
+	//162
+	fmt.Println(day.FindPeakElement([]int{1, 2}))
 }
