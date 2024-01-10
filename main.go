@@ -34,5 +34,8 @@ func main() {
 	//common.PrintTree(day.BstToGst(tree))
 
 	//162
-	fmt.Println(day.FindPeakElement([]int{1, 2}))
+	//	fmt.Println(day.FindPeakElement([]int{1, 2}))
+
+	// 2696
+	fmt.Println(day.MinLength("ABFCACDB"))
 }
