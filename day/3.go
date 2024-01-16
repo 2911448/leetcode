@@ -15,7 +15,6 @@ func LengthOfLongestSubstring(s string) int {
 			m[s[right+1]]++
 			right++
 		}
-		// 第 i 到 right 个字符是一个极长的无重复字符子串
 		ans = max(ans, right-i+1)
 	}
 	return ans

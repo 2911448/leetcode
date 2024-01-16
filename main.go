@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"leetcode/common"
 	"leetcode/day"
 )
 
@@ -37,5 +38,8 @@ func main() {
 	//	fmt.Println(day.FindPeakElement([]int{1, 2}))
 
 	// 2696
-	fmt.Println(day.MinLength("ABFCACDB"))
+	//fmt.Println(day.MinLength("ABFCACDB"))
+
+	// 82
+	fmt.Println(day.DeleteDuplicates(common.MakeListNode([]int{1, 2, 3, 3, 4, 4, 5})).PrintListNode())
 }
