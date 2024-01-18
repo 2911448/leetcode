@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"leetcode/common"
 	"leetcode/day"
 )
 
@@ -41,5 +40,8 @@ func main() {
 	//fmt.Println(day.MinLength("ABFCACDB"))
 
 	// 82
-	fmt.Println(day.DeleteDuplicates(common.MakeListNode([]int{1, 2, 3, 3, 4, 4, 5})).PrintListNode())
+	//fmt.Println(day.DeleteDuplicates(common.MakeListNode([]int{1, 2, 3, 3, 4, 4, 5})).PrintListNode())
+
+	// 2744
+	fmt.Println(day.MaximumNumberOfStringPairs([]string{"cd", "ac", "dc", "ca", "zz"}))
 }
