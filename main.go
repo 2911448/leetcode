@@ -43,4 +43,7 @@ func main() {
 	// 2171
 	//println(day.MinimumRemoval([]int{43, 44, 45, 46, 47}))
 	//println(day.MinimumRemoval([]int{66, 90, 47, 25, 92, 90, 76, 85, 22, 3}))
+
+	// 679
+	//println(day.MaximumSwap(20))
 }
