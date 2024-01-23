@@ -1,7 +1,6 @@
 package main
 
 import (
-	"leetcode/common"
 	"leetcode/hot"
 )
 
@@ -12,5 +11,9 @@ func main() {
 	//}
 
 	// 两数相加
-	println(hot.AddTwoNumbers(common.MakeListNode([]int{9, 9, 9, 9, 9, 9, 9}), common.MakeListNode([]int{9, 9, 9, 9})).PrintListNode())
+	//println(hot.AddTwoNumbers(common.MakeListNode([]int{9, 9, 9, 9, 9, 9, 9}), common.MakeListNode([]int{9, 9, 9, 9})).PrintListNode())
+
+	// 无重复字符串的最长子串
+	println(hot.LengthOfLongestSubstring("abcabcbb"))
+
 }
