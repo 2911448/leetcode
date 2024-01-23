@@ -1,5 +1,7 @@
 package day
 
+import "leetcode/tool"
+
 func LengthOfLongestSubstring(s string) int {
 	m := map[byte]int{}
 	n := len(s)
@@ -15,14 +17,7 @@ func LengthOfLongestSubstring(s string) int {
 			m[s[right+1]]++
 			right++
 		}
-		ans = max(ans, right-i+1)
+		ans = tool.Max(ans, right-i+1)
 	}
 	return ans
-}
-
-func max(x, y int) int {
-	if x < y {
-		return y
-	}
-	return x
 }

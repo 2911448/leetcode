@@ -1,5 +1,7 @@
 package main
 
+import "leetcode/day"
+
 func main() {
 
 	//1410
@@ -46,4 +48,7 @@ func main() {
 
 	// 679
 	//println(day.MaximumSwap(20))
+
+	// 2765
+	println(day.AlternatingSubarray([]int{20, 9, 15, 15}))
 }
