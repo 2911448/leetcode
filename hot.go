@@ -1,8 +1,6 @@
 package main
 
-import (
-	"leetcode/hot"
-)
+import "leetcode/hot"
 
 func main() {
 	// 两数之和 1
@@ -14,6 +12,8 @@ func main() {
 	//println(hot.AddTwoNumbers(common.MakeListNode([]int{9, 9, 9, 9, 9, 9, 9}), common.MakeListNode([]int{9, 9, 9, 9})).PrintListNode())
 
 	// 无重复字符串的最长子串
-	println(hot.LengthOfLongestSubstring("abcabcbb"))
+	//println(hot.LengthOfLongestSubstring("abcabcbb"))
 
+	// 最长回文子串 *******
+	println(hot.LongestPalindrome("babad"))
 }
