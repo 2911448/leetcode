@@ -50,5 +50,9 @@ func main() {
 	//println(day.MaximumSwap(20))
 
 	// 2765
-	println(day.AlternatingSubarray([]int{20, 9, 15, 15}))
+	//println(day.AlternatingSubarray([]int{20, 9, 15, 15}))
+
+	// 2865
+	println(day.MaximumSumOfHeights([]int{1, 5, 2, 5, 6, 4, 6, 3, 4, 5}))
+	//println(day.MaximumSumOfHeights([]int{3, 5, 4}))
 }
