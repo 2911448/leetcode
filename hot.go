@@ -15,5 +15,8 @@ func main() {
 	//println(hot.LengthOfLongestSubstring("abcabcbb"))
 
 	// 最长回文子串 *******
-	println(hot.LongestPalindrome("babad"))
+	//println(hot.LongestPalindrome("babad"))
+
+	// 盛水最多的容器
+	println(hot.MaxArea([]int{1, 8, 6, 2, 5, 4, 8, 3, 7}))
 }
