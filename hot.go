@@ -1,6 +1,9 @@
 package main
 
-import "leetcode/hot"
+import (
+	"leetcode/common"
+	"leetcode/hot"
+)
 
 func main() {
 	// 两数之和 1
@@ -18,5 +21,8 @@ func main() {
 	//println(hot.LongestPalindrome("babad"))
 
 	// 盛水最多的容器
-	println(hot.MaxArea([]int{1, 8, 6, 2, 5, 4, 8, 3, 7}))
+	//println(hot.MaxArea([]int{1, 8, 6, 2, 5, 4, 8, 3, 7}))
+
+	// 删除链表的倒数第 N 个节点
+	println(hot.RemoveNthFromEnd(common.MakeListNode([]int{1, 2, 3, 4, 5}), 2).PrintListNode())
 }
