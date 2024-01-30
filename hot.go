@@ -1,9 +1,6 @@
 package main
 
-import (
-	"leetcode/common"
-	"leetcode/hot"
-)
+import "leetcode/hot"
 
 func main() {
 	// 两数之和 1
@@ -23,6 +20,9 @@ func main() {
 	// 盛水最多的容器
 	//println(hot.MaxArea([]int{1, 8, 6, 2, 5, 4, 8, 3, 7}))
 
-	// 删除链表的倒数第 N 个节点
-	println(hot.RemoveNthFromEnd(common.MakeListNode([]int{1, 2, 3, 4, 5}), 2).PrintListNode())
+	// 删除链表的倒数第 N 个节点 删除
+	//println(hot.RemoveNthFromEnd(common.MakeListNode([]int{1, 2, 3, 4, 5}), 2).PrintListNode())
+
+	// 最长连续序列
+	println(hot.LongestConsecutive([]int{100, 4, 200, 1, 3, 2}))
 }
