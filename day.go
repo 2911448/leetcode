@@ -57,5 +57,11 @@ func main() {
 	//println(day.MaximumSumOfHeights([]int{3, 5, 4}))
 
 	// 2859
-	println(day.SumIndicesWithKSetBits([]int{4, 3, 2, 1}, 2))
+	//println(day.SumIndicesWithKSetBits([]int{4, 3, 2, 1}, 2))
+
+	// 2670
+
+	for _, num := range day.DistinctDifferenceArray([]int{3, 2, 3, 4, 2}) {
+		println(num)
+	}
 }
