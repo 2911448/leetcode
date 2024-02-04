@@ -31,7 +31,11 @@ func main() {
 	//println(hot.Trap([]int{4, 2, 0, 3, 2, 5}))
 
 	// 找到字符串中所有字母异位词
-	for _, str := range hot.FindAnagrams("cbaebabacd", "abc") {
-		println(str)
-	}
+	//for _, str := range hot.FindAnagrams("cbaebabacd", "abc") {
+	//	println(str)
+	//}
+
+	// 和为 K 的子数组
+	print(hot.SubarraySum([]int{1, 2, 3}, 3))
+	print(hot.SubarraySum([]int{1, 1, 1}, 2))
 }
