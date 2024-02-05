@@ -36,6 +36,20 @@ func main() {
 	//}
 
 	// 和为 K 的子数组
-	print(hot.SubarraySum([]int{1, 2, 3}, 3))
-	print(hot.SubarraySum([]int{1, 1, 1}, 2))
+	//print(hot.SubarraySum([]int{1, 2, 3}, 3))
+	//print(hot.SubarraySum([]int{1, 1, 1}, 2))
+
+	// 合并区间
+	//for _, ints := range hot.Merge([][]int{{1, 3}, {2, 6}, {8, 10}, {15, 18}}) {
+	//	for _, i := range ints {
+	//		print(i)
+	//	}
+	//	println("--")
+	//}
+	for _, ints := range hot.Merge([][]int{{1, 4}, {0, 0}}) {
+		for _, i := range ints {
+			print(i)
+		}
+		println("--")
+	}
 }
