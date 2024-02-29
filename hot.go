@@ -1,7 +1,5 @@
 package main
 
-import "leetcode/hot"
-
 func main() {
 	// 两数之和 1
 	//for _, i := range hot.TwoSum([]int{3, 2, 4}, 6) {
@@ -46,10 +44,28 @@ func main() {
 	//	}
 	//	println("--")
 	//}
-	for _, ints := range hot.Merge([][]int{{1, 4}, {0, 0}}) {
-		for _, i := range ints {
-			print(i)
-		}
-		println("--")
-	}
+	//for _, ints := range hot.Merge([][]int{{1, 4}, {0, 0}}) {
+	//	for _, i := range ints {
+	//		print(i)
+	//	}
+	//	println("--")
+	//}
+
+	// 两两交换链表节点
+	//print(hot.SwapPairs(common.MakeListNode([]int{1, 2, 3, 4})).PrintListNode())
+
+	// 148 排序链表
+	//println(hot.SortList(common.MakeListNode([]int{4, 2, 3, 1, 5, 6})).PrintListNode())
+
+	// 206 反转链表
+	//println(hot.ReverseList(common.MakeListNode([]int{1, 2, 3, 4, 5})).PrintListNode())
+
+	// 25 K个一组反转链表
+	//println(hot.ReverseKGroup1(common.MakeListNode([]int{1, 2, 3, 4, 5}), 3).PrintListNode())
+
+	// 146 LRU
+	//lru := hot.Constructor(5)
+	//lru.Put(1, 1)
+	//lru.Put(2, 2)
+	//lru.Get(1)
 }

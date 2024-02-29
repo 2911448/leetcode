@@ -1,7 +1,5 @@
 package main
 
-import "leetcode/day"
-
 func main() {
 
 	//1410
@@ -61,7 +59,20 @@ func main() {
 
 	// 2670
 
-	for _, num := range day.DistinctDifferenceArray([]int{3, 2, 3, 4, 2}) {
-		println(num)
-	}
+	//for _, num := range day.DistinctDifferenceArray([]int{3, 2, 3, 4, 2}) {
+	//	println(num)
+	//}
+
+	// 1696
+	//print(day.MaxResult([]int{1, -1, -2, 4, -7, 3}, 2))
+
+	// LCP 30
+	//println(day.MagicTower([]int{100, 100, 100, -250, -60, -140, -50, -50, 100, 150}))
+	//println(day.MagicTower([]int{-1, -1, 10}))
+
+	// 54
+	//for _, i := range day.SpiralOrder([][]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}) {
+	//	println(i)
+	//}
+
 }
