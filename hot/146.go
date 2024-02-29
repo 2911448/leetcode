@@ -44,7 +44,7 @@ func (this *LRUCache) Get(key int) int {
 }
 
 func (this *LRUCache) Put(key int, value int) {
-	if v, ok := this.cache[key]; ok {
+	if v, ok := this.cache[key]; !ok {
 		// 新建节点
 		node := InitLinkedNode(key, value)
 		// 长度增加
