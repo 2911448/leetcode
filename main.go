@@ -6,10 +6,10 @@ import (
 )
 
 func main() {
-	withChannel(5)
+	withChannel()
 }
 
-func withChannel(num int) {
+func withChannel() {
 	ch1, ch2 := make(chan struct{}), make(chan struct{})
 	wg := sync.WaitGroup{}
 	wg.Add(2)
@@ -18,9 +18,9 @@ func withChannel(num int) {
 
 	go func() {
 		defer wg.Done()
-		for i := 1; i <= num; i += 2 {
+		for i := 1; i <= 26; i++ {
 			<-ch1
-			fmt.Println("one: ", i)
+			fmt.Println(i)
 			ch2 <- struct{}{}
 		}
 		<-ch1
@@ -29,10 +29,9 @@ func withChannel(num int) {
 
 	go func() {
 		defer wg.Done()
-		// for i := 2; i < num; i += 2 {  // 如果在这里没有= ，会直接死锁
-		for i := 2; i <= num; i += 2 {
+		for i := 65; i <= 90; i++ {
 			<-ch2
-			fmt.Println("two: ", i)
+			fmt.Println(string(byte(i)))
 			ch1 <- struct{}{}
 		}
 	}()
