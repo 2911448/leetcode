@@ -1,6 +1,9 @@
 package hot
 
-import "leetcode/common"
+import (
+	"leetcode/common"
+	"leetcode/tool"
+)
 
 func diameterOfBinaryTree(root *common.TreeNode) int {
 	left := helper(root.Left)
@@ -13,12 +16,5 @@ func helper(root *common.TreeNode) int {
 	}
 	left := helper(root.Left)
 	right := helper(root.Right)
-	return max(left, right) + 1
-}
-
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
+	return tool.Max(left, right) + 1
 }
